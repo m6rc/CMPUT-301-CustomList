@@ -26,7 +26,7 @@ public class CustomListTest {
     }
 
     @Test
-    void testHasCity() {
+    public void testHasCity() {
         //CityList cityList = mockCityList();
         City city = new City("Kamloops", "BC");
         assertFalse(list.hasCity(city));
