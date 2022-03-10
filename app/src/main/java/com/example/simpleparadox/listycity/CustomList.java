@@ -62,16 +62,16 @@ public class CustomList extends ArrayAdapter<City> {
         return cities.contains(city);
     }
 
-      public void deleteCity(City city){
-//        if (this.hasCity(city))
-//        {
-//            cities.remove(city);
-//        }
-//        else
-//        {
-//            throw new NoSuchElementException("City is not in list!");
-//        }
-      }
+    public void deleteCity(City city){
+        if (this.hasCity(city))
+        {
+            cities.remove(city);
+        }
+        else
+        {
+            throw new NoSuchElementException("City is not in list!");
+        }
+    }
 //
 //    public int countCities()
 //    {
