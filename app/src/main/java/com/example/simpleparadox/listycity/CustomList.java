@@ -13,6 +13,7 @@ import androidx.annotation.Nullable;
 import org.w3c.dom.Text;
 
 import java.util.ArrayList;
+import java.util.NoSuchElementException;
 
 public class CustomList extends ArrayAdapter<City> {
 
@@ -56,4 +57,24 @@ public class CustomList extends ArrayAdapter<City> {
         cities.add(city);
         return;
     }
+
+    public boolean hasCity(City city){
+        return cities.contains(city);
+    }
+
+//    public void deleteCity(City city){
+//        if (this.hasCity(city))
+//        {
+//            cities.remove(city);
+//        }
+//        else
+//        {
+//            throw new NoSuchElementException("City is not in list!");
+//        }
+//    }
+//
+//    public int countCities()
+//    {
+//        return cities.size();
+//    }
 }
