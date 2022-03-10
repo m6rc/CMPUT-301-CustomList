@@ -35,13 +35,13 @@ public class CustomListTest {
         assertFalse(list.hasCity(new City("Hamilton", "Ontario")));
     }
 
-//    @Test
-//    public void testDeleteCity() {
-//        City city = new City("Calgs", "Alberta");
-//        list.addCity(city);
-//        list.deleteCity(city);
-//        assertFalse(list.hasCity(city));
-//    }
+    @Test
+    public void testDeleteCity() {
+        City city = new City("Calgs", "Alberta");
+        list.addCity(city);
+        list.deleteCity(city);
+        assertFalse(list.hasCity(city));
+    }
 //
 //    @Test
 //    public void testCountCities()
