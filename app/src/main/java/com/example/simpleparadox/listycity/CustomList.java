@@ -72,9 +72,10 @@ public class CustomList extends ArrayAdapter<City> {
             throw new NoSuchElementException("City is not in list!");
         }
     }
-//
-//    public int countCities()
-//    {
-//        return cities.size();
-//    }
+
+    public int countCities()
+    {
+        return 0;
+        //return cities.size();
+    }
 }
